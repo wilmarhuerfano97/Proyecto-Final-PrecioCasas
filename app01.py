@@ -1,5 +1,4 @@
-import subprocess
-subprocess.run('python3 -m pip install folium')
+
 from re import template
 from PIL import Image
 import streamlit as st
