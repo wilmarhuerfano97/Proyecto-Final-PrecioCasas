@@ -13,7 +13,7 @@ st.set_page_config(page_title='App - Pronóstico',
                     page_icon='🚀',  
                     initial_sidebar_state="expanded")
 
-st.title("Pronosticando precios de casas")
+st.title("Pronosticando precios de casas-Dinámica Inmobiliaria en King County")
 st.sidebar.markdown("Características")
 
 @st.cache
