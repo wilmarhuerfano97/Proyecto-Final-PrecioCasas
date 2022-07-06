@@ -1,12 +1,7 @@
-
-from re import template
-from PIL import Image
 import streamlit as st
 import pandas as pd
-import joblib
 import numpy as np
 import pickle
-import tempfile
 
 import folium
 from streamlit_folium import folium_static
