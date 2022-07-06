@@ -220,3 +220,36 @@ if st.sidebar.button('Los parámetros han sido cargados. Calcular precio'):
 else:
     st.snow()
     st.error('Por favor, seleccione los parámatros de la propiedad para estimar el precio.')
+    
+    
+    
+    
+    
+    col1, col2 = st.columns(2)
+with col1: 
+     st.write('Evolución del precio por tipo de propiedad y año de construcción')
+     data2['dormitory_type']=data2['bedrooms'].apply(lambda x: 'Estudio' if x <=1 else 'Apartamento' if x==2 else 'Casa' )
+     df = data[['yr_built', 'price','dormitory_type']].groupby(['yr_built','dormitory_type']).mean().reset_index()
+     with sns.axes_style("darkgrid"):
+          plt.style.use('dark_background')
+          fig = plt.figure(figsize=(7,7)) # try different values
+          fig = sns.lineplot(x ='yr_built', y= 'price', data2 = df, hue="dormitory_type", style="dormitory_type")
+          fig.set_xlabel("Año de Construcción", fontsize = 17)
+          fig.set_ylabel("Precio (Millones de Dólares)", fontsize = 17)
+          fig.legend(title='Tipo de propiedad', loc='upper right', labels=['Apartamento', 'Casa','Estudio'])
+          fig = fig.figure
+          st.pyplot(fig)
+
+
+with col2: 
+     st.write('Evolución del precio por pie cuadrado por tipo de propiedad y año de construcción')
+     df = data2[['yr_built', 'price/sqft','dormitory_type']].groupby(['yr_built','dormitory_type']).mean().reset_index()
+     with sns.axes_style("darkgrid"):
+          plt.style.use('dark_background')
+          fig = plt.figure(figsize=(7,7)) # try different values
+          fig = sns.lineplot(x ='yr_built', y= 'price/sqft', data2 = df, hue="dormitory_type", style="dormitory_type")
+          fig.set_xlabel("Año de Construcción", fontsize = 17)
+          fig.set_ylabel("Precio por pie cuadrado (Dólares)", fontsize = 17)
+          fig.legend(title='Tipo de propiedad', loc='upper right', labels=['Apartamento', 'Casa','Estudio'])
+          fig = fig.figure
+          st.pyplot(fig)
