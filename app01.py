@@ -25,7 +25,7 @@ st.sidebar.markdown("Características")
 def get_data():
     return pd.read_csv('kc_house_data.csv')
 
-data = get_data()
+data = get_data().dropna()
 
 X = pd.DataFrame() ### dataframe vacio
 
