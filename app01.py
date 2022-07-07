@@ -13,7 +13,7 @@ st.set_page_config(page_title='App - Pronóstico',
                     page_icon='🏘️',  
                     initial_sidebar_state="expanded")
 
-st.title("Pronosticando  Inmobiliaria en King County")
+st.title("Pronosticando precios des casas en King County")
 st.header('Propuesto por [Wilmar Augsuto Huerfano Triana](https://www.linkedin.com/in/wilmar-augusto-huerfano-triana-2b1a9a242/)')
 st.sidebar.markdown("Características")
 
