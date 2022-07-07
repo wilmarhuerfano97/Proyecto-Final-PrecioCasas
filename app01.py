@@ -10,12 +10,12 @@ from sklearn.preprocessing import PolynomialFeatures
 
 st.set_page_config(page_title='App - Pronóstico',
                     layout="wide", 
-                    page_icon='💸💸💸💸🏘️💸💸💸',  
+                    page_icon='🏘️',  
                     initial_sidebar_state="expanded")
 
-st.title("Pronosticando precios de casas en King County")
-st.header('Propuesto por [Wilmar Augsuto Huerfano Triana](https://www.linkedin.com/in/wilmar-augusto-huerfano-triana-2b1a9a242/)')
-st.header('Este dashboard tiene por objetivo presentar rápida y fácilmente la información derivada del estudio de la dinámica inmobiliaria en King Count, WA (USA). Los datos están disponibles[Aquí](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction/code)')
+st.title("Pronosticando precios de casas en  inmobiliaria en King Count, WA (USA)")
+st.header('Propuesto por: [Wilmar Augusto Huerfano Triana](https://www.linkedin.com/in/wilmar-augusto-huerfano-triana-2b1a9a242/)')
+st.header('Este dashboard tiene por objetivo presentar Informacion de densidad de casas disponibles y el numero de casas relacionadas al precio estimado por el modelo . Los datos están disponibles[Aquí](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction/code)')
 st.sidebar.markdown("Características")
 
 @st.cache
