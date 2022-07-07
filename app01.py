@@ -102,7 +102,7 @@ if renovacion == 'Sí':
     renovacion = 1
 else:  
     renovacion = 0
-dX.loc[0,'renovated_status'] = renovacion
+X.loc[0,'renovated_status'] = renovacion
 
 st.markdown("""
 En esta pestaña, un modelo de Machine Learning ha sido disponible para generar pronósticos de precios  basado en las propiedades del inmueble. El usuario deberá suministrar las características de tal inmueble utilizando el menú de la barra izquierda. A continuación se definen la información requerida. :
