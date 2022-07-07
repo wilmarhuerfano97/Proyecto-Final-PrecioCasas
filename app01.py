@@ -14,7 +14,7 @@ st.set_page_config(page_title='App - Pronóstico',
                     initial_sidebar_state="expanded")
 
 st.title("Pronosticando precios de casas-Dinámica Inmobiliaria en King County")
-st.header('Propuesto por [Sébastien Lozano-Forero](https://www.linkedin.com/in/sebastienlozanoforero/)')
+st.header('Propuesto por [Wilmar Augsuto Huerfano Triana](https://www.linkedin.com/in/wilmar-augusto-huerfano-triana-2b1a9a242/)')
 st.sidebar.markdown("Características")
 
 @st.cache
