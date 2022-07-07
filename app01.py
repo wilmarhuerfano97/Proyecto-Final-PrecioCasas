@@ -10,10 +10,10 @@ from sklearn.preprocessing import PolynomialFeatures
 
 st.set_page_config(page_title='App - Pronóstico',
                     layout="wide", 
-                    page_icon='🚀',  
+                    page_icon='🏘️',  
                     initial_sidebar_state="expanded")
 
-st.title("Pronosticando precios de casas-Dinámica Inmobiliaria en King County")
+st.title("Pronosticando  Inmobiliaria en King County")
 st.header('Propuesto por [Wilmar Augsuto Huerfano Triana](https://www.linkedin.com/in/wilmar-augusto-huerfano-triana-2b1a9a242/)')
 st.sidebar.markdown("Características")
 
@@ -105,7 +105,7 @@ else:
 X.loc[0,'renovated_status'] = renovacion
 
 st.markdown("""
-En esta pestaña, un modelo de Machine Learning ha sido disponibilizado para generar pronósticos de precios  basado en las propuidades del inmueble. El usuario deberá suministrar las características de tal inmueble utilizando el menú de la barra izquierda. A continuación se definen la información requerida. :
+En esta pestaña, un modelo de Machine Learning ha sido disponibilizado para generar pronósticos de precios  basado en las propiedades del inmueble. El usuario deberá suministrar las características de tal inmueble utilizando el menú de la barra izquierda. A continuación se definen la información requerida. :
      
 - Número de baños: Número de baños de la propiedad a sugerir precio. Valores como 1.5 baños se refiere a la existencia de un baño con ducha y un baño sin dicha.
 - Número de habitaciones: Número de habitaciones de la propiedad a sugerir precio
