@@ -102,11 +102,10 @@ if renovacion == 'Sí':
     renovacion = 1
 else:  
     renovacion = 0
-
-X.loc[0,'renovated_status'] = renovacion
+dX.loc[0,'renovated_status'] = renovacion
 
 st.markdown("""
-En esta pestaña, un modelo de Machine Learning ha sido disponibilizado para generar pronósticos de precios  basado en las propiedades del inmueble. El usuario deberá suministrar las características de tal inmueble utilizando el menú de la barra izquierda. A continuación se definen la información requerida. :
+En esta pestaña, un modelo de Machine Learning ha sido disponible para generar pronósticos de precios  basado en las propiedades del inmueble. El usuario deberá suministrar las características de tal inmueble utilizando el menú de la barra izquierda. A continuación se definen la información requerida. :
      
 - Número de baños: Número de baños de la propiedad a sugerir precio. Valores como 1.5 baños se refiere a la existencia de un baño con ducha y un baño sin dicha.
 - Número de habitaciones: Número de habitaciones de la propiedad a sugerir precio
