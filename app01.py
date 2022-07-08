@@ -17,8 +17,8 @@ st.title("Pronosticando precios de casas en  inmobiliaria en King Count, WA (USA
 st.header('Propuesto por: [Wilmar Augusto Huerfano Triana](https://www.linkedin.com/in/wilmar-augusto-huerfano-triana-2b1a9a242/)')
 st.header('Este dashboard tiene por objetivo presentar Informacion de densidad de casas disponibles y el numero de casas relacionadas al precio estimado por el modelo . Los datos están disponibles[Aquí](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction/code)')
 st.sidebar.markdown("En esta pestaña, un modelo de Machine Learning ha sido disponible para generar pronósticos de precios  basado en las propiedades del inmueble. ")
-st.sidebar.markdown("El usuario deberá suministrar las características de tal inmueble . A continuación se definen la información requerida:")
-
+st.sidebar.markdown("El usuario deberá suministrar las características de tal inmueble . ")
+st.sidebar.markdown("A continuación se definen la información requerida:")
 @st.cache
 def get_data():
     return pd.read_csv('kc_house_data.csv')
@@ -106,8 +106,6 @@ else:
 X.loc[0,'renovated_status'] = renovacion
 
 st.markdown("""
-En esta pestaña, un modelo de Machine Learning ha sido disponible para generar pronósticos de precios  basado en las propiedades del inmueble. El usuario deberá suministrar las características de tal inmueble utilizando el menú de la barra izquierda. A continuación se definen la información requerida. :
-     
 - Número de baños: Número de baños de la propiedad a sugerir precio. Valores como 1.5 baños se refiere a la existencia de un baño con ducha y un baño sin dicha.
 - Número de habitaciones: Número de habitaciones de la propiedad a sugerir precio
 - Área del inmueble: Área en pies cuadrados de la propiedad a sugerir precio
