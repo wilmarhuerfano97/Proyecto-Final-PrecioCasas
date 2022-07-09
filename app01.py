@@ -145,7 +145,7 @@ if st.sidebar.button('Los parámetros han sido cargados. Calcular precio'):
     with col1: ### first map
 
         st.header(f"Densidad de casas disponibles con presupuesto menor o igual al estimado: ${precio}")
-        data2 = data[data['price']<=precio]
+        data2 = data.copy()
         data2['zipcode'] = data2['zipcode'].astype(str)
         
         data_aux = data2[['id','zipcode']].groupby('zipcode').count().reset_index()
