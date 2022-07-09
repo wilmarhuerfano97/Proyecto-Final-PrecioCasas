@@ -1,6 +1,6 @@
 
 # CienciaDeDatos
-En este repositorio vamos a alojar los materiales para la versión 2022-1 del Diplomado en Ciencia de Datos de FULL :)
+En este repositorio vamos a alojar los materiales utilizado para la elaboracion del siguiente Dashboard :)
 
-[Repositorio de videos ](https://drive.google.com/drive/folders/1Hs-5GHQnYMFW92zWqBs3CvSwobnUjnrw?usp=sharing)
+[dashboard streamlit ](https://wilmarhuerfano97-proyecto-final-preciocasas-app01-ko6fd9.streamlitapp.com/)
 
